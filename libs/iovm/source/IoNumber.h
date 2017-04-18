@@ -139,7 +139,6 @@ IOVM_API IO_METHOD(IoNumber, isPrint);
 IOVM_API IO_METHOD(IoNumber, isPunctuation);
 IOVM_API IO_METHOD(IoNumber, isSpace);
 IOVM_API IO_METHOD(IoNumber, isHexDigit);
-
 IOVM_API IO_METHOD(IoNumber, pound-kilo);
 IOVM_API IO_METHOD(IoNumber, kilo-pound);
 IOVM_API IO_METHOD(IoNumber, celsius-f);
@@ -169,12 +168,6 @@ IOVM_API IO_METHOD(IoNumber, Nano);
 IOVM_API IO_METHOD(IoNumber, Pico);
 IOVM_API IO_METHOD(IoNumber, Femto);
 IOVM_API IO_METHOD(IoNumber, Atto);
-
-
-
-
-
-
 
 IOVM_API IO_METHOD(IoNumber, asLowercase);
 IOVM_API IO_METHOD(IoNumber, asUppercase);

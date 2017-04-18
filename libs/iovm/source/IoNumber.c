@@ -1031,6 +1031,124 @@ IO_METHOD(IoNumber, isOdd)
 	return IOBOOL(self, 0x01 == (n & 0x01));
 }
 
+//BEGINNING OF JEFF FUNCTIONS
+IO_METHOD(IoNumber, pound-kilo)
+{
+	return IONUMBER(DATA(self) / 2.2);
+}
+IO_METHOD(IoNumber, kilo-pound)
+{
+	return IONUMBER(DATA(self) * 2.2);
+}
+IO_METHOD(IoNumber, celsius-f)
+{
+	return IONUMBER((DATA(self)*1.8)*32);
+}
+IO_METHOD(IoNumber, fahrenheit-c)
+{
+	return IONUMBER((DATA(self)-32) * .555);
+}
+IO_METHOD(IoNumber, teaspoon-ml)
+{
+	return IONUMBER(DATA(self) / 4.929);
+}
+IO_METHOD(IoNumber, ml-teaspoon)
+{
+	return IONUMBER(DATA(self) * 4.929);
+}
+IO_METHOD(IoNumber, ml-tablespoon)
+{
+	return IONUMBER(DATA(self) / 14.787);
+}
+IO_METHOD(IoNumber, tablespoon-ml)
+{
+	return IONUMBER(DATA(self) * 14.768);
+}
+IO_METHOD(IoNumber, grams-ounce)
+{
+	return IONUMBER(DATA(self) / 28);
+}
+IO_METHOD(IoNumber, ounce-grams)
+{
+	return IONUMBER(DATA(self) * 28);
+}
+IO_METHOD(IoNumber, mile-kilometers)
+{
+	return IONUMBER(DATA(self) * 1.6);
+}
+IO_METHOD(IoNumber, kilometers-mile)
+{
+	return IONUMBER(DATA(self) / 1.6);
+}
+IO_METHOD(IoNumber, inches-cm)
+{
+	return IONUMBER(DATA(self) * 2.54);
+}
+IO_METHOD(IoNumber, cm-inches)
+{
+	return IONUMBER(DATA(self) / 2.54);
+}
+IO_METHOD(IoNumber, Exa)
+{
+	return IONUMBER(DATA(self) * 1000000000000000000);
+}
+IO_METHOD(IoNumber, Peta)
+{
+	return IONUMBER(DATA(self) * 1000000000000000);
+}
+IO_METHOD(IoNumber, Tera)
+{
+	return IONUMBER(DATA(self) * 1000000000000);
+}
+IO_METHOD(IoNumber, Giga)
+{
+	return IONUMBER(DATA(self) * 1000000000);
+}
+IO_METHOD(IoNumber, Mega)
+{
+	return IONUMBER(DATA(self) * 1000000);
+}
+IO_METHOD(IoNumber, Kilo)
+{
+	return IONUMBER(DATA(self) * 1000);
+}
+IO_METHOD(IoNumber, Hecto)
+{
+	return IONUMBER(DATA(self) * 100);
+}
+IO_METHOD(IoNumber, Deca)
+{
+	return IONUMBER(DATA(self) * 10);
+}
+IO_METHOD(IoNumber, Centi)
+{
+	return IONUMBER(DATA(self) * .01);
+}
+IO_METHOD(IoNumber, Milli)
+{
+	return IONUMBER(DATA(self) * .001);
+}
+IO_METHOD(IoNumber, Micro)
+{
+	return IONUMBER(DATA(self) * .000001);
+}
+IO_METHOD(IoNumber, Nano)
+{
+	return IONUMBER(DATA(self) * .000000001);
+}
+IO_METHOD(IoNumber, Pico)
+{
+	return IONUMBER(DATA(self) * .000000000001);
+}
+IO_METHOD(IoNumber, Femto)
+{
+	return IONUMBER(DATA(self) * .000000000000001);
+}
+IO_METHOD(IoNumber, Atto)
+{
+	return IONUMBER(DATA(self) * .000000000000000001);
+}
+//END OF JEFF Functions
 // character operations ---------------------------------
 
 IO_METHOD(IoNumber, isAlphaNumeric)
